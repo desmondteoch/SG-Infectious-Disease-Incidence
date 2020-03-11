@@ -2,18 +2,6 @@
 
 # This is a shiny app built for the Coursera project:
 # Developing Data Products, Assignment 4
-#
-# This shiny app uses data from the MOH, Singapore on the weekly
-# infectious disease burden in Singapore.
-# Data is from 2012 to 2019 (total 8 years).
-#
-# The goal is to display the incidence of the selected infectious disease
-# through a plot, and also produce the data in a table format.
-#
-# The other objective is to run a linear regression model on the selected
-# data, to show the trend of the change in incidence over the years.
-
-#Sys.setlocale("LC_ALL","English")
 
 #library(shiny)
 
@@ -22,6 +10,13 @@ shinyUI(fluidPage(
 
     # Application title
     titlePanel("Infectious Diseases Burden in Singapore"),
+    
+    h5("This shiny app uses data from the MOH, Singapore on the weekly infectious disease burden in Singapore.
+        Data is from 2012 to 2019 (total 8 years).
+        The goal is to display the incidence of the selected infectious disease
+        through a plot, and also produce the data in a table format.
+        The other objective is to run a linear regression model on the selected
+        data, to show the trend of the change in incidence over the years."),
 
     # Sidebar to select for disease(s)
     sidebarLayout(
